@@ -34,34 +34,34 @@ The description of the item contains 8 or more numbers, and,
 The description of the item contains exactly the same set of numbers as another item.
 
 Insert 22 19.97 475 1238 9742 0
-# New item with id=22, price="$19.97", description="475 1238 9742"
-# Return: 1
+// New item with id=22, price="$19.97", description="475 1238 9742"
+// Return: 1
 
 Insert 12 96.92 44 109 0
-# Second item with id=12, price="96.92", description="44 109"
-# Return: 1
+// Second item with id=12, price="96.92", description="44 109"
+// Return: 1
 
 Insert 37 47.44 109 475 694 88 0
-# Another item with id=37, price="47.44", description="109 475 694 88"
-# Return: 1
+// Another item with id=37, price="47.44", description="109 475 694 88"
+// Return: 1
 
 PriceHike 10 22 10
-# 10% price increase for id=12 and id=22
-# New price of 12: 106.61, Old price = 96.92.  Net increase = 9.69
-# New price of 22: 21.96.  Old price = 19.97.  Net increase = 1.99
-# Return: 11.68  (sum of 9.69 and 1.99)
+// 10% price increase for id=12 and id=22
+// New price of 12: 106.61, Old price = 96.92.  Net increase = 9.69
+// New price of 22: 21.96.  Old price = 19.97.  Net increase = 1.99
+// Return: 11.68  (sum of 9.69 and 1.99)
 
 FindMaxPrice 475		
-# Return: 47.44 (id of items considered: 22, 37)
+// Return: 47.44 (id of items considered: 22, 37)
 
 Delete 37
-# Return: 1366 (=109+475+694+88)
+// Return: 1366 (=109+475+694+88)
 
 FindMaxPrice 475		
-# Return: 21.96 (id of items considered: 22)
+// Return: 21.96 (id of items considered: 22)
 
 End
-# Lines after "End" are not processed.
+// Lines after "End" are not processed.
 
 
 Output specification
@@ -69,7 +69,5 @@ Output specification
 The output is a single number, which is the sum of the following values obtained by the algorithm as it processes the input.
 Output:
 1450.08
-
-
 
 
